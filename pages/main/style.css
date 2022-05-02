@@ -8,9 +8,9 @@ html {
   font-size: 62.5%;
 }
 
-body {
+.first-content {
   background-image: url('../../assets/images/start-screen-gradient-background.svg');
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -111,10 +111,6 @@ h2 {
   align-items: flex-end;
 }
 
-.white-background {
-  background-color: #fff;
-}
-
 .main-image {
   width: 100%;
 }
@@ -124,7 +120,6 @@ h2 {
   height: 100%;
   margin: 0 auto;
 }
-
 
 .btn {
   padding: 1.5rem 4.5rem;
@@ -408,7 +403,6 @@ h4 {
 /* **************** */
 
 footer {
-  max-width: 128rem;
   height: 35rem;
   background-image: url('../../assets/icons/footer-gradient-background.svg');
   background-position: center;
