@@ -1,0 +1,78 @@
+
+.flex--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--gap-3 {
+  gap: 3rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* 0.06 = 0.96px = 0.096rem */
+
+h1, h3, h4, h5, .btn, .pet-names, .grid-help span, footer a {
+  letter-spacing: 0.096rem;
+}
+
+.letter-spacing--1 {
+  letter-spacing: 0.16rem;
+}
+
+h1, h2, h3, h4, h5, .btn, .pet-names, .grid-help span, footer a {
+  font-family: 'Georgia', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header p, 
+header a,
+.not-only-block p,
+.text-container p,
+.section-donation p
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.margin-bottom--4rem {
+  margin-bottom: 4rem;
+}
+
+.margin-bottom--3rem {
+  margin-bottom: 3rem;
+}
+
+.margin-bottom--2rem {
+  margin-bottom: 2rem;
+}
+
+.margin--right-3rem {
+  margin-right: 3rem;
+}
+
+.padding-right--bg {
+  padding-right: 20rem;
+}
