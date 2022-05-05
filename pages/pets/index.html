@@ -10,25 +10,26 @@
 </head>
 <body>
   <header class="header-pets">
-    <div class="logo-container">
-      <h1 class="heading-primary-pets">Cozy House</h1>
-      <p class="letter-spacing--1">Shelter for pets in Boston</p>
-    </div>
+    <a href="../main/index.html">
+      <div class="logo-container">
+        <h1 class="heading-primary-pets">Cozy House</h1>
+        <p class="letter-spacing--1">Shelter for pets in Boston</p>
+      </div>
+    </a>   
     <nav class="main-nav">
       <ul class="main-nav-list flex--center">
-        <li><a href="#">About the shelter</a></li>
-        <li><a  class="highlighted" href="../pets/index.html" target="_blank">Out pets</a></li>
-        <li><a href="#help">Help the shelter</a></li>
+        <li><a href="../main/index.html">About the shelter</a></li>
+        <li><a class="highlighted" href="../pets/index.html">Out pets</a></li>
+        <li><a href="../main/index.html#help">Help the shelter</a></li>
         <li><a href="#footer">Contacts</a></li>
       </ul>
     </nav>
   </header>
-
   <main>
     <section class="section-friends-page">
       <div class="content-container">
         <h3>Our friends who<br>are looking for a house</h3>
-        <div class="pets-grid">
+        <div class="pets-selection">
           <div class="pets-content">
             <img class="margin-bottom--3rem" src="../../assets/images/pets-katrine.svg" alt="Katrine photo">
             <p class="pet-names margin-bottom--4rem">Katrine</p>
@@ -70,8 +71,39 @@
             <button class="btn btn-pets">Learn More</button>
           </div>
         </div>
+        <div class="slider flex--center gap--2">
+          <button class="btn-slider slider-before" disabled>&lt;&lt;</button>
+          <button class="btn-slider slider-before" disabled>&lt;</button>
+          <button class="btn-slider slider-current">1</button>
+          <button class="btn-slider slider-after">&gt;</button>
+          <button class="btn-slider slider-after">&gt;&gt;</button>
+        </div>
       </div>
     </section>
   </main>
+  <footer id="footer">
+    <div class="content-container grid grid--3-cols">
+      <div class="contant">
+        <h3 class="margin-bottom--4rem">For questions<br>and suggestions</h3>
+        <h4 class="margin-bottom--4rem"><span><img src="../../assets/icons/mail.svg" alt="Mail icon">
+        </span><a href="mailto:email@shelter.com">email@shelter.com</a></h4>
+        <h4><span><img src="../../assets/icons/phone.svg" alt="Phone icon"></span><a href="tel:136745677554"> +13 674 567 75 54</a></h4>       
+      </div>
+      <div class="address">
+        <h3 class="margin-bottom--3rem">We are waiting 
+          <br>
+          for your visit</h3>
+          <div class="address-wrapper">
+            <span><img class="footer-pin" src="../../assets/icons/pin.svg" alt="Pin icon"></span>
+            <h4 class="margin-bottom--3rem"><a href="https://goo.gl/maps/hvsFzeNg5MxSMzmR6" target="_blank">Central Street, Boston (entrance from the store)</a></h4>
+          </div>
+        <h4><span><img class="footer-pin" src="../../assets/icons/pin.svg" alt="Pin icon">
+        </span><a href="https://goo.gl/maps/zNjsXbjaGTDPUA6C9" target="_blank">18 South Park, London</a></h4>       
+      </div>
+      <div class="footer-img-container">
+        <img src="../../assets/images/footer-puppy.svg" alt="Footer icon">
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

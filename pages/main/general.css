@@ -54,6 +54,14 @@ h1 {
   grid-template-columns: repeat(5, 1fr);
 }
 
+.gap--2 {
+  gap: 2rem;
+}
+
+.gap--3 {
+  gap: 3rem;
+}
+
 /* 0.06 = 0.96px = 0.096rem */
 
 h1, h3, h4, h5, .btn, .pet-names, .grid-help span, footer a, .heading-primary-pets {
@@ -64,7 +72,7 @@ h1, h3, h4, h5, .btn, .pet-names, .grid-help span, footer a, .heading-primary-pe
   letter-spacing: 0.16rem;
 }
 
-h1, h2, h3, h4, h5, .btn, .pet-names, .grid-help span, footer a {
+h1, h2, h3, h4, h5, .btn, .pet-names, .grid-help span, footer a, .btn-slider {
   font-family: 'Georgia', sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -100,3 +108,4 @@ header a,
 .padding-right--bg {
   padding-right: 20rem;
 }
+
