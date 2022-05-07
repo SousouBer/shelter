@@ -1,3 +1,23 @@
+/* GENERAL STYLES APPLIED TO DIFFERENT PAGES */
+
+section {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+header {
+  max-width: 120rem;
+  padding: 5.7rem 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;  
+  line-height: 110%;
+}
 
 .flex--center {
   display: flex;
@@ -12,6 +32,10 @@
 
 .grid--gap-3 {
   gap: 3rem;
+}
+
+.grid--gap-4 {
+  gap: 4rem;
 }
 
 .grid--2-cols {
@@ -30,9 +54,17 @@
   grid-template-columns: repeat(5, 1fr);
 }
 
+.gap--2 {
+  gap: 2rem;
+}
+
+.gap--3 {
+  gap: 3rem;
+}
+
 /* 0.06 = 0.96px = 0.096rem */
 
-h1, h3, h4, h5, .btn, .pet-names, .grid-help span, footer a {
+h1, h3, h4, h5, .btn, .pet-names, .grid-help span, footer a, .heading-primary-pets {
   letter-spacing: 0.096rem;
 }
 
@@ -40,7 +72,7 @@ h1, h3, h4, h5, .btn, .pet-names, .grid-help span, footer a {
   letter-spacing: 0.16rem;
 }
 
-h1, h2, h3, h4, h5, .btn, .pet-names, .grid-help span, footer a {
+h1, h2, h3, h4, h5, .btn, .pet-names, .grid-help span, footer a, .btn-slider {
   font-family: 'Georgia', sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -76,3 +108,4 @@ header a,
 .padding-right--bg {
   padding-right: 20rem;
 }
+
