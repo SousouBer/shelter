@@ -17,7 +17,7 @@
         <p class="letter-spacing--1">Shelter for pets in Boston</p>
       </div>
       <nav class="main-nav">
-        <ul class="main-nav-list flex--center">
+        <ul class="main-nav-list nav-flex">
           <li><a class="highlighted" href="#">About the shelter</a></li>
           <li><a href="../pets/index.html">Out pets</a></li>
           <li><a href="#help">Help the shelter</a></li>
@@ -32,7 +32,9 @@
             <br>
             need a house</h2>
           <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-          <a class="btn btn-primary" href="#friends">Make a friend</a>
+          <div class="make-friend-btn">
+            <a class="btn btn-primary" href="#friends">Make a friend</a>
+          </div>
         </div> 
         <div class="main-image-container">
           <img class="main-image" src="../../assets/images/start-screen-puppy.svg" alt="Puppy image">
@@ -69,12 +71,12 @@
             <p class="pet-names margin-bottom--4rem">Katrine</p>
             <button class="btn btn-pets">Learn More</button>
           </div>
-          <div class="pets-content">
+          <div class="pets-content" id="jennifer">
             <img class="margin-bottom--3rem" src="../../assets/images/pets-jennifer.svg" alt="Jennifer photo">
             <p class=" pet-names margin-bottom--4rem">Jennifer</p>
             <button class="btn btn-pets">Learn More</button>
           </div>
-          <div class="pets-content">
+          <div class="pets-content" id="woody">
             <img class="margin-bottom--3rem" src="../../assets/images/pets-woody.svg" alt="Woody photo">
             <p class="pet-names margin-bottom--4rem">Woody</p>
             <button class="btn btn-pets">Learn More</button>
@@ -87,10 +89,9 @@
     </section>
 
     <section class="section-help" id="help">
-      <div class="content-container center-grid flex--center">
+      <div class="content-container">
         <h3>How you can help<br>our shelter</h3>
-        <div class="grid-help">
-          <div class="grid-1">
+        <div class="help-items">
             <div class="help-item">
               <img src="../../assets/icons/Vector.svg" alt="Vector icon">
               <span>Pet Food</span>
@@ -111,9 +112,7 @@
               <img src="../../assets/icons/shampoos.svg" alt="Shampoos icon">
               <span>Shampoos</span>
             </div>
-          </div>
-          <div class="grid-2">
-            <div class="help-item vit">
+            <div class="help-item">
               <img src="../../assets/icons/vitamins.svg" alt="Vitamins icon">
               <span>Vitamins</span>
             </div>
@@ -128,31 +127,32 @@
             <div class="help-item">
               <img src="../../assets/icons/sleeping-area.svg" alt="Sleeping-area icon">
               <span>Sleeping area</span>
-            </div> 
           </div>         
         </div>
       </div>
     </section>
 
     <section class="section-donation">
-      <div class="content-container grid grid--2-cols grid--gap-3">
-        <div class="donation-puppy-wrapper donation-flex flex--jr margin--right-3rem">
-          <img src="../../assets/images/donation-dog.svg" alt="Donation Puppy">
-        </div>
-        <div class="donation-wrapper donation-flex flex--column">
-          <h3>You can also
-            <br>
-            make a donation</h3>
-          <h5>Name of the bank / Type of bank account</h5>
-          <h4 class="donation-number"><span><img class="donation-icon" src="../../assets/icons/credit-card.svg" alt="Credit Card"></span><a href="#!"> 8380 2880 8028 8791 7435</a></h4>
-          <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+      <div class="content-container">
+        <div class="donation-wrapper">
+          <div class="donation-puppy-wrapper donation-flex flex--jr margin--right-3rem">
+            <img src="../../assets/images/donation-dog.svg" alt="Donation Puppy">
+          </div>
+          <div class="donation-flex flex--column donation-info">
+            <h3>You can also
+              <br>
+              make a donation</h3>
+            <h5>Name of the bank / Type of bank account</h5>
+            <h4 class="donation-number"><span><img class="donation-icon" src="../../assets/icons/credit-card.svg" alt="Credit Card"></span><a href="#!"> 8380 2880 8028 8791 7435</a></h4>
+            <p class="donation-text">Legal information and lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac<br> diam. Praesent ultrices maximus tortor et vulputate. Interdum et<br> malesuada fames ac ante ipsum primis in faucibus.</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
   <footer id="footer">
-    <div class="content-container grid grid--3-cols">
-      <div class="contant">
+    <div class="content-container footer-content ">
+      <div class="contact">
         <h3 class="margin-bottom--4rem">For questions<br>and suggestions</h3>
         <h4 class="margin-bottom--4rem"><span><img src="../../assets/icons/mail.svg" alt="Mail icon">
         </span><a href="mailto:email@shelter.com">email@shelter.com</a></h4>
@@ -164,7 +164,7 @@
           for your visit</h3>
           <div class="address-wrapper">
             <span><img class="footer-pin" src="../../assets/icons/pin.svg" alt="Pin icon"></span>
-            <h4 class="margin-bottom--3rem"><a href="https://goo.gl/maps/hvsFzeNg5MxSMzmR6" target="_blank">Central Street, Boston (entrance from the store)</a></h4>
+            <h4 class="margin-bottom--3rem"><a href="https://goo.gl/maps/hvsFzeNg5MxSMzmR6" target="_blank">Central Street, Boston<br> (entrance from the store)</a></h4>
           </div>
         <h4><span><img class="footer-pin" src="../../assets/icons/pin.svg" alt="Pin icon">
         </span><a href="https://goo.gl/maps/zNjsXbjaGTDPUA6C9" target="_blank">18 South Park, London</a></h4>       
