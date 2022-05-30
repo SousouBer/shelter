@@ -7,7 +7,7 @@ section {
 
 header {
   max-width: 120rem;
-  padding: 5.7rem 0;
+  padding: 5.7rem 2rem;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -20,6 +20,13 @@ h1 {
 }
 
 .flex--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-flex {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,6 +113,6 @@ header a,
 }
 
 .padding-right--bg {
-  padding-right: 20rem;
+  padding-right: 30%;
 }
 
