@@ -17,6 +17,8 @@
         <p class="letter-spacing--1">Shelter for pets in Boston</p>
       </div>
       <nav class="main-nav">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
         <ul class="main-nav-list nav-flex">
           <li><a class="highlighted" href="#">About the shelter</a></li>
           <li><a href="../pets/index.html">Out pets</a></li>
@@ -82,8 +84,10 @@
             <button class="btn btn-pets">Learn More</button>
           </div>
         </div>
-        <button class="btn-left" disabled>&larr;</button>
-        <button class="btn-right" disabled>&rarr;</button>
+        <div class="buttons">
+          <button class="btn-left" disabled>&larr;</button>
+          <button class="btn-right" disabled>&rarr;</button>
+        </div>
         <a class="btn btn-secondary" href="../pets/index.html"> Get to know the rest</a>
       </div>
     </section>
@@ -91,7 +95,7 @@
     <section class="section-help" id="help">
       <div class="content-container">
         <h3>How you can help<br>our shelter</h3>
-        <div class="help-items">
+        <div class="help-items help-items--flex help-items--grid">
             <div class="help-item">
               <img src="../../assets/icons/Vector.svg" alt="Vector icon">
               <span>Pet Food</span>
@@ -151,7 +155,7 @@
     </section>
   </main>
   <footer id="footer">
-    <div class="content-container footer-content ">
+    <div class="content-container footer-content footer-grid">
       <div class="contact">
         <h3 class="margin-bottom--4rem">For questions<br>and suggestions</h3>
         <h4 class="margin-bottom--4rem"><span><img src="../../assets/icons/mail.svg" alt="Mail icon">
