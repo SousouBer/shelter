@@ -588,6 +588,12 @@ footer span {
   background-color: #F1CDB3;
 }
 
+.slides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 950px){
   header {
     padding: 5.7rem 2rem;
@@ -709,6 +715,15 @@ footer span {
     grid-column: 1 / -1;
     justify-content: center;
   }
+
+  /* PETS PAGE */
+  .pets-selection {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #freddie, #scerlett {
+    display: none;
+  }
 }
 
 @media (max-width: 710px){
@@ -765,6 +780,19 @@ footer span {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 4rem;
+  }
+
+  #charley, #timmy {
+    display: none;
+  }
+
+  .pets-selection {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .slides {
+    gap: 2;
   }
 }
 
@@ -882,6 +910,5 @@ footer span {
 
   .section-about {
     padding: 5rem 0;
-   
   }
 }
