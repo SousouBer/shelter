@@ -14,6 +14,8 @@ html {
   background-image: url('../../assets/images/start-screen-gradient-background.svg');
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .header-main p {
@@ -962,17 +964,33 @@ footer span {
 }
 
 @media (min-width: 320px) and (max-width: 767px){
+  .hamburger__open {
+    transform: rotate(90deg);
+  }
+  
+  .logo__hidden {
+    opacity: 0;
+  }
+
+  .no-scroll {
+    max-height: 100vh;
+  }
+
   .main-nav-list {
     position: absolute;
-    visibility: hidden;
+    transform: translateX(32rem);
     top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(24, 39, 51, 0.65);
-    transition: all 0.3 ease;
-   }
- 
+    right: 0;
+    height: 100vh;
+    width: 32rem;
+    background-color: #292929;
+    transition: all 0.3s ease;
+    font-size: 3.2rem;
+  }
+  
+  .dim-area__open {
+    transform: translateX(0);
+  }
    .nav-flex {
      flex-direction: column;
    }
@@ -981,18 +999,8 @@ footer span {
      font-size: 3.2rem;
    }
  
-   .main-nav .toggler {
-     z-index: 2;
-     cursor: pointer;
-     width: 5rem;
-     height: 5rem;
-     opacity: 0;
-     margin-right: 4rem;
-   }
- 
-   .main-nav .hamburger {
-     position: absolute;
-     z-index: 1;
+    .hamburger {
+     z-index: 3;
      width: 6rem;
      height: 6rem;
      padding: 1rem;
@@ -1000,6 +1008,8 @@ footer span {
      align-items: center;
      justify-content: center;
      background-color: transparent;
+     transition: all 0.3s ease-in-out;
+     
    } 
  
    .main-nav .hamburger > div {
@@ -1027,18 +1037,8 @@ footer span {
    .main-nav .hamburger > div:after {
      top: 1rem;
    }
- 
-   .main-nav .toggler:checked + .hamburger > div {
-     transform: rotate(135deg);
-   }
- 
-   .main-nav .toggler:checked + .hamburger > div:before,
-   .main-nav .toggler:checked + .hamburger > div:after {
-     top: 0;
-     transform: rotate(90deg);
-   }
- 
-   .main-nav .toggler:checked ~ .main-nav-list {
-     visibility: visible;
+
+   .header-pets .highlighted {
+     color: #CDCDCD;
    }
 }
