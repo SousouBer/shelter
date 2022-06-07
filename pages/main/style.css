@@ -10,6 +10,10 @@ html {
   font-size: 62.5%;
 }
 
+.hide-y {
+  overflow-y: hidden;
+}
+
 .first-content {
   background-image: url('../../assets/images/start-screen-gradient-background.svg');
   background-size: cover;
@@ -77,6 +81,8 @@ a {
 .main-nav{
   display: flex;
   align-items: center;
+  position: inherit;
+  /* overflow-x: hidden; */
 }
 
 /* FIRST SECTION */
@@ -269,7 +275,7 @@ h3 {
 .pets-content {
   background-color: #fff;
   padding-bottom: 4rem;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .pets-content:hover {
@@ -592,18 +598,19 @@ footer span {
   background-color: #F1CDB3;
 }
 
-.slider-before {  
+.slider-inactive {  
   box-shadow: inset 0 0 0 2px #CDCDCD;
   color: #CDCDCD;
 }
 
-.slider-after {
+.slider-active {
   background-color: #fff;
   box-shadow: inset 0 0 0 2px #F1CDB3;
   cursor: pointer;
+  color: #292929;
 }
 
-.slider-after:hover {
+.slider-active:hover {
   background-color: #F1CDB3;
 }
 
@@ -611,6 +618,57 @@ footer span {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1.7rem;
+}
+
+.pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; 
+  background-color: #292929;
+  display: none;
+  opacity: 0.5;
+  z-index: 99;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.pop-up div {
+  width: 60%;
+  height: 70%;
+  background-color: #fff;
+  position: relative;
+  display: none;
+}
+
+.pop-up button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 50%;
+  transform: translate(100%, -100%);
+  border: none;
+  box-shadow: inset 0 0 0 2px #F1CDB3;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.pop-up button:hover {
+  background-color: #fff;
+}
+
+.first-wrapper {
+  position: relative;
+  overflow-x: hidden;
 }
 
 /* MEDIA QUERIES */
@@ -673,9 +731,9 @@ footer span {
 
   /* SECTION FRIENDS */
 
-  #woody-1, #jennifer-1 {
+  /* #woody-1, #jennifer-1 {
     display: none;
-  }
+  } */
 
   .section-friends {
     padding: 4rem 0;
@@ -782,9 +840,9 @@ footer span {
     gap: 1rem;
   }
 
-  #freddie, #scerlett, #charley, #timmy, #sophia {
+  /* #jennifer, #sophia, #woody, #scarlett, #katrine {
     display: none;
-  }
+  } */
 
   /* FRIENDS PAGE */
   .section-friends-page {
@@ -871,14 +929,13 @@ footer span {
   .pets-grid {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 5rem;
-    justify-items: right;
     gap: 4rem;
   }
   
-  #jennifer-1 {
+  /* #jennifer-1 {
     display: block;
     justify-self: left;
-  }
+  } */
 
   .btn-right {
     transform: translateX(-50%);
@@ -939,28 +996,42 @@ footer span {
     gap: 6rem;
   }  
   /* FRIENDS SELECTION PAGE */
-  #timmy, #sophia, #charley {
+  /* #sophia, #woody, #jennifer {
     display: block;
-  }
+  } */
 
   .pets-selection {
     grid-template-columns: repeat(2, 1fr);
-    justify-items: right;
+    column-gap: 0;
     padding-top: 3rem;
     padding-bottom: 5rem;
   }
 
-  #jennifer, #sophia, #charley {
+  /* #woody, #jennifer, #freddie {
     justify-self: left;
-  }
+  } */
 
   .section-friends-page {
-    padding: 5rem 0 8rem 0;
+    padding: 5rem 5rem 8rem 5rem;
+  }
+
+  .address, .contact {
+    text-align: left;
+    margin-bottom: 7rem;
   }
 
   .slides {
     gap: 2rem;
   }
+
+  .footer-content {
+    column-gap: 6rem;
+  }
+
+  .footer-img-container img {
+    max-width: 100%;
+  }
+
 }
 
 @media (min-width: 320px) and (max-width: 767px){

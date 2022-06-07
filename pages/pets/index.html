@@ -9,29 +9,38 @@
   <title>Pets</title>
 </head>
 <body>
-  <header class="header-pets">
-    <a href="../main/index.html">
-      <div class="logo-container">
-        <h1 class="heading-primary-pets">Cozy House</h1>
-        <p class="letter-spacing--1">Shelter for pets in Boston</p>
-      </div>
-    </a>   
-    <nav class="main-nav">
-      <div class="hamburger"><div></div></div>
-      <ul class="main-nav-list nav-flex">
-        <li><a href="../main/index.html">About the shelter</a></li>
-        <li><a class="highlighted" href="../pets/index.html">Out pets</a></li>
-        <li><a href="../main/index.html#help">Help the shelter</a></li>
-        <li><a href="#footer">Contacts</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="first-wrapper">
+    <header class="header-pets">
+      <a href="../main/index.html">
+        <div class="logo-container">
+          <h1 class="heading-primary-pets">Cozy House</h1>
+          <p class="letter-spacing--1">Shelter for pets in Boston</p>
+        </div>
+      </a>   
+      <nav class="main-nav">
+        <div class="hamburger"><div></div></div>
+        <ul class="main-nav-list nav-flex">
+          <li><a href="../main/index.html">About the shelter</a></li>
+          <li><a class="highlighted" href="../pets/index.html">Out pets</a></li>
+          <li><a href="../main/index.html#help">Help the shelter</a></li>
+          <li><a href="#footer">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  
+  
+  <div class="pop-up"><div class="pop-up-data">
+    <button><strong>&#10006;</strong></button>
+  </div></div>
+
+
   <main>
     <section class="section-friends-page">
       <div class="content-container">
         <h3>Our friends who<br>are looking for a house</h3>
-        <div class="pets-selection">
-          <div class="pets-content" id="katrine">
+        <div class="pets-selection" id="pets-selection">
+          <!-- <div class="pets-content" id="katrine">
             <img class="margin-bottom--3rem" src="../../assets/images/pets-katrine.svg" alt="Katrine photo">
             <p class="pet-names margin-bottom--4rem">Katrine</p>
             <button class="btn btn-pets">Learn More</button>
@@ -70,18 +79,19 @@
             <img class="margin-bottom--3rem" src="../../assets/images/pets-freddie.svg" alt="Freddie photo">
             <p class="pet-names margin-bottom--4rem">Freddie</p>
             <button class="btn btn-pets">Learn More</button>
-          </div>
+          </div> -->
         </div>
         <div class="slider slides gap--2">
-          <button class="btn-slider slider-before" disabled>&lt;&lt;</button>
-          <button class="btn-slider slider-before" disabled>&lt;</button>
+          <button class="btn-slider slider-inactive" id="start" disabled>&lt;&lt;</button>
+          <button class="btn-slider slider-inactive slider-back" disabled>&lt;</button>
           <button class="btn-slider slider-current">1</button>
-          <button class="btn-slider slider-after">&gt;</button>
-          <button class="btn-slider slider-after">&gt;&gt;</button>
+          <button class="btn-slider slider-active slider-front">&gt;</button>
+          <button class="btn-slider slider-active" id="end">&gt;&gt;</button>
         </div>
       </div>
     </section>
   </main>
+</div>
   <footer id="footer">
     <div class="content-container footer-content footer-grid">
       <div class="contact">
@@ -106,6 +116,6 @@
       </div>
     </div>
   </footer>
+  <script src="pets.js"></script>
 </body>
-<script src="../main/script.js"></script>
 </html>
