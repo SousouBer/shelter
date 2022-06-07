@@ -10,6 +10,10 @@ html {
   font-size: 62.5%;
 }
 
+.hide-y {
+  overflow-y: hidden;
+}
+
 .first-content {
   background-image: url('../../assets/images/start-screen-gradient-background.svg');
   background-size: cover;
@@ -662,6 +666,11 @@ footer span {
   background-color: #fff;
 }
 
+.first-wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 320px) and (max-width: 1279px){
@@ -920,7 +929,6 @@ footer span {
   .pets-grid {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 5rem;
-    justify-items: right;
     gap: 4rem;
   }
   
