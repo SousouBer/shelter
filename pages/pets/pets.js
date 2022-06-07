@@ -675,26 +675,57 @@ function DisplayList(items, wrapper, rows_per_page, page){
   for(let i = 0; i < paginatedItems.length; i++){
     let pet = randomArr[i];
 
-    const {name, img, type, breed, desc, age, inoc, diseases, paraites} = pet;
+    const {name, img} = pet;
 
-    const petDiv = `<div class="pets-content" id="${name.toLowerCase()}">
+    const petDiv = `<div class="pets-content" id="${name}">
       <img class="margin-bottom--3rem" src="${img}" alt="${name} photo">
       <p class="pet-names margin-bottom--4rem">${name}</p>
         <button class="btn btn-pets">Learn More</button>
     </div>`
 
      wrapper.insertAdjacentHTML('afterbegin', petDiv);
+    
     }
 
     const petContent = document.querySelectorAll('.pets-content');
 
     for(let i = 0; i < paginatedItems.length; i++){
-      petContent[i].addEventListener('click', function(){
+      
+      
+      petContent[i].addEventListener('click', function(e){
+        popUpDiv.innerHTML = '';
+        const trigerredPet = paginatedItems.findIndex(obj => obj.name === petContent[i].id);
+
+        const {name, img, type, breed, description, age, inoc, diseases, paraites} = paginatedItems[trigerredPet];
+
+
+        const popUpContent = `
+        <button><strong>&#10006;</strong></button>
+        <div class="img-more-info">
+          <img src="${img}" alt="Woody">
+        </div>
+        <div class="more-info-container">
+          <h3>${name}</h3>
+          <h4>${breed}</h4>
+          <p>${description}</p>
+          <ul>
+            <li><strong>Age:</strong> ${age}</li>
+            <li><strong>Inoculations:</strong> ${inoc}</li>
+            <li><strong>Diseases:</strong> ${diseases}</li>
+            <li><strong>Parasites:</strong>${paraites}</li>
+          </ul>
+        </div>`
+
+
+
+      popUpDiv.insertAdjacentHTML('afterbegin', popUpContent);
+
       popUp.style.display = 'flex';
-      popUpDiv.style.display = 'block';
+      popUpDiv.style.display = 'flex';
       document.body.style.overflowY = 'hidden';
     
       console.log('clicked');
+    
       })
     }
   }

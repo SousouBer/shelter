@@ -340,3 +340,14 @@ btnRight.addEventListener('click', () => {
 btnLeft.addEventListener('click', () => {
   DisplayList(pets, petsGrid);
 });
+
+// @keyframes append-animate {
+// 	from {
+// 		transform: scaleY(0);
+// 		opacity: 0;
+// 	}
+// 	to {
+// 		transform: scaleY(1);
+// 		opacity: 1;
+// 	}
+// }
