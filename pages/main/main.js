@@ -155,7 +155,7 @@ function DisplayList(items, wrapper){
         const {name, img, type, breed, description, age, inoculations, diseases, parasites} = pets[trigerredPet];
 
         const popUpContent = `
-        <button><strong>&#10006;</strong></button>
+        <button class="modal-btn"><strong>&#10006;</strong></button>
         <div class="img-more-info">
           <img src="${img}" alt="Woody">
         </div>
@@ -182,7 +182,7 @@ function DisplayList(items, wrapper){
   }
 
 popUp.addEventListener('click', function(e){
-  if(!e.target.classList.contains('pop-up-data')){
+  if(e.target.classList.contains('pop-up') || e.target.classList.contains('modal-btn')){
     popUp.style.display = 'none';
     document.body.style.overflowY = 'visible';
   }
