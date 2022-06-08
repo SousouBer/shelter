@@ -605,7 +605,7 @@ function DisplayList(items, wrapper, rows_per_page, page){
         const {name, img, type, breed, description, age, inoculations, diseases, parasites} = paginatedItems[trigerredPet];
 
         const popUpContent = `
-        <button><strong>&#10006;</strong></button>
+        <button class="modal-btn"><strong>&#10006;</strong></button>
         <div class="img-more-info">
           <img src="${img}" alt="Woody">
         </div>
@@ -635,7 +635,7 @@ DisplayList(pets, list_element, rows, current_page);
 
 
 popUp.addEventListener('click', function(e){
-  if(!e.target.classList.contains('pop-up-data')){
+  if(e.target.classList.contains('pop-up') || e.target.classList.contains('modal-btn')){
     popUp.style.display = 'none';
     document.body.style.overflowY = 'visible';
   }
