@@ -699,6 +699,7 @@ footer span {
   align-items: center;
   justify-content: center;
   background-color: black;
+  flex: 1;
 }
 
 .img-more-info img {
@@ -733,10 +734,12 @@ footer span {
 }
 
 .more-info-container {
+  /* width: 100%; */
   padding: 5rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 1;
 }
 
 
@@ -945,7 +948,6 @@ footer span {
   .pop-up-data p {
     margin: 2rem 0;
   }
-  
   
   .more-info-container {
     padding: 1rem;
